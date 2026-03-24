@@ -50,3 +50,16 @@ print("result3:", result3)
 
 result4 = give_greeting("Alex")
 print("result4:", result4)
+
+
+print("===== (3) Scope =====")
+b = 100  #3
+
+# DEFINE
+def calculate(a, b): #2
+    c = a * b  #1
+    print(f"C equals: {c}")
+
+
+# CALL
+calculate(5, 50)
