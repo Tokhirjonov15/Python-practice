@@ -4,7 +4,7 @@
   (3) Scope
 '''
 
-print("===== DEFINE VS CALL =====")
+print("===== (1) DEFINE VS CALL =====")
 # build in function > print() type()
 # Function > reusable block of code!
 # Python uses indentation
@@ -27,3 +27,26 @@ print("result1:", result1)
 
 result2 = greeting('Alex')
 print("result2:", result2)
+
+
+print("===== (2) Keyword & default arguments =====")
+
+# DEFINE
+
+
+def give_greet(name, age):
+    print("give_greet has been executed")
+    return f"Hi {name}, you are {age} years old!"
+
+
+def give_greeting(name, age=25):
+    print("give_greet has been executed")
+    return f"Hi {name}, you are {age} years old!"
+
+
+# CALL
+result3 = give_greet(name="Alex", age=28)
+print("result3:", result3)
+
+result4 = give_greeting("Alex")
+print("result4:", result4)
