@@ -22,3 +22,6 @@ print(type(math))
 # OOP 4 Concepts > Abstraction | Encapsulation | Inheritance | Polimorphism
 result = math.ceil(97.1)
 print("result:", result)
+
+
+print("===== Error handling system =====")
