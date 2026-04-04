@@ -4,7 +4,7 @@
     (3) POLIMORPHISM
 '''
 
-print("===== (2) INHERITANCE =====")
+print("===== (2) INHERITANCE & (3) POLIMORPHISM =====")
 # PARENT > CHILD
 # Parent can only provides public and protected properties(state + method) to child element!
 
@@ -37,6 +37,9 @@ class Dog(Animal):  # Child
 
     def protect(self):
         print("Yes, I can protect you!")
+        
+    def make_voice(self):
+        print(f"the {self.name} says: {self.sound}")
 
 
 class Cat(Animal):  # Child
@@ -89,3 +92,9 @@ fish.make_voice()
 print("------")
 print(Animal.description)
 print(Dog.description)
+
+
+print("====== (3) POLIMORPHISM ======")
+
+dog.make_voice()
+fish.make_voice()
