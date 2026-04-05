@@ -24,3 +24,25 @@ print("Updated fruits:", fruits)
 animals = ("dog", "cat", "fish", "lion")
 tuple_obj = ("MIT", 100, True, None)
 print(animals[0])
+
+
+print("===== Unpacking arguments =====")
+groups = ["MIT", "FLEXY", "PYTHON", "STACK"]
+(x, y, *z) = groups
+print(f"the x: {x} and the y: {y}")
+print("z:", z)  # list
+
+
+# *args > tuple
+def calculate(*args):
+    print("*args >", args)
+    total = 1
+    for x in args:
+        total *= x
+    print(f"the total value: {total}")
+    return total
+
+
+calculate(1, 4, 5, 8)
+calculate(1, 5, 8)
+calculate(1, 4, 5)
